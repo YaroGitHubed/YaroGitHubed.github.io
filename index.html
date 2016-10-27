@@ -3,6 +3,12 @@
 <head>
 <title>Yaroslav</title>
 <style>
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    }
 a:link, a:visited {
     background-color: yellow;
     color: black;
@@ -22,7 +28,9 @@ body {background-color: grey;
 </style>
 </head>
 <body>
-<h1 style="position: fixed; text-align: left; background-color: dimgrey; padding: 40px;">var person = prompt("Please enter your name", "I am Yaroslav");</h1>
+<div class="fixed">    
+<h1 style="text-align: left; background-color: dimgrey; padding: 40px;">var person = prompt("Please enter your name", "I am Yaroslav");</h1>
+</div>    
 <div style="margin-top: 200px; font-size: 30px"><p> var whoIam = ["Researcher (PhD)", "Curious", "Passionate about coding"];</p>
     <p>console.log(whoIam[0]);</p>
     <p>I am a scientist with a PhD degree in biotechnology. I have been in science for over ten years working at different universities in the UK.</p>
